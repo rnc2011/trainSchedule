@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron text-center"><h1>Anytime is Train Time!</h1></div>
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="name-display" ></td>
+                <td id="destination-display"></td>
+                <td id="frequency-display"></td>
+                <td id="arrival-display"></td>
+                <td id="minutes-display"></td>
+              </tr>
+              
+            </tbody>
+          </table>
+          
+          <form>
+              <h2>Add Train</h2>
+            <div class="form-group">
+              <label>Train Name</label>
+              <input type="text" class="form-control" id="tName" aria-describedby="textHelp" placeholder="Train Name">
+            </div>
+            <div class="form-group">
+                <label>Destination</label>
+                <input type="text" class="form-control" id="dName" aria-describedby="textHelp" placeholder="Destination">
+              </div>
+              <div class="form-group">
+                <label>First Train Time (HH:mm Military Time)</label>
+                <input type="text" class="form-control" id="ftTime" aria-describedby="textHelp" placeholder="First Train Time">
+              </div>
+              <div class="form-group">
+                <label>Frequency</label>
+                <input type="text" class="form-control" id="frequency" aria-describedby="textHelp" placeholder="Frequency">
+              </div>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script src="apps.js"></script>
+</body>
+</html>
